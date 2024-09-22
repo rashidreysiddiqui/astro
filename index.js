@@ -17,7 +17,7 @@ app.post("/webhook/orders/create", (req, res) => {
 
   // Verify the HMAC to ensure the data came from Shopify
   const hash = crypto
-    .createHmac("sha256", SHOPIFY_WEBHOOK_SECRET)
+    .createHmac("sha256", "22d4a72d56d554df87b331e5e1d7e7d10a55604b1f34b1e7f15f8e60b4e7e61b")
     .update(body, "utf8")
     .digest("base64");
 
