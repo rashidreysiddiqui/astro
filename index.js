@@ -36,9 +36,10 @@ app.post("/webhook/orders/create", (req, res) => {
 app.get('/', (req, res) => {
   res.send('Hello your Astro App is live')
 })
-app.post('/userData',(req,res)=>{
-
+app.get('/test', (req, res) => {
+  res.send('Hello your Astro App is live yuhoo!!')
 })
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
